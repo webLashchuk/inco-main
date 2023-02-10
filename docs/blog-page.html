@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InColor | Блог</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header class="header header__secondary">
+    <div class="container header__container">
+        <div class="header__inner">
+            <ul class="contacts contacts--main">
+                <li class="contacts__item">
+                    <a class="white-link contacts__link contacts__link--social" href="tel:+380950173045">
+                        095 017 30 45
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="white-link contacts__link" href="tel:+380688104688">
+                        068 810 46 88
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="white-link contacts__link" href="mailto:incolor.ra@gmail.com">
+                        incolor.ra@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="header-menu">
+
+            <button class="burger-btn burger-btn--white burger-btn--open" type="button">
+                <span class="burger-btn__line burger-btn__line--white"></span>
+                <span class="sr-only">Открыть меню</span>
+            </button>
+
+            <a class="logo header__logo" href="#">
+                <img src="images/logo-sm.svg" width="122" height="57" alt="Логотип InColor">
+            </a>
+
+            <ul class="menu menu--main">
+                <li class="menu__item">
+                    <a class="white-link menu__link  @printActive" href="#">
+                        Печать
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="white-link menu__link @shopActive" href="#">
+                        Магазин
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="white-link menu__link menu__link--active" href="#">
+                        Блог
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="white-link menu__link @infoActive" href="#">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="cart cart--on" href="#">
+                        <span class="cart__count">3</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <button class="callback-btn" type="button">Обратный звонок</button>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="overlay"></div>
+            <ul class="mobile-menu__inner">
+                <li class="mobile-menu__item">
+                    <button class="burger-btn burger-btn--close burger-btn--white" type="button">
+                        <span class="sr-only">Закрыть меню</span>
+                    </button>
+                    <a class="logo mobile-menu__logo" href="#">
+                        <img src="images/logo-sm.svg" width="122" height="57" alt="Логотип InColor">
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+
+                    <ul class="menu menu--mobile">
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @printActive" href="#">
+                                Печать
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @shopActive" href="#">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile menu__link--active" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @infoActive" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @basketActive" href="#">
+                                Корзина
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="mobile-menu__item">
+
+                    <ul class="contacts mobile-menu__contacts">
+                        <li class="contacts__item">
+                            <a class="white-link contacts__link contacts__link contacts__link--social" href="tel:+380950173045">
+                                095 017 30 45
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="white-link contacts__link contacts__link" href="tel:+380688104688">
+                                068 810 46 88
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="white-link contacts__link contacts__link" href="mailto:incolor.ra@gmail.com">
+                                incolor.ra@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="main main--secondary-bg">
+
+    <div class="callback-overlay"></div>
+<form class="callback" action="#" id="modal">
+    <button class="callback__close" type="button">
+        <span class="sr-only">Закрыть меню</span>
+    </button>
+    <h2 class="title callback__title">Обратный звонок</h2>
+    <div class="callback__item">
+        <label class="callback__label " for="name">
+            Ваше имя
+        </label>
+        <input class="callback__field" type="text" id="name" name="name" placeholder="Ваше имя"
+            required="required">
+    </div>
+    <div class="callback__item callback__item--phone">
+        <label class="callback__label" for="tel">
+            Телефон
+        </label>
+        <input class="callback__field callback__field" type="tel" id="tel" name="tel"
+            placeholder="+38(ХХХ) ХХХ-ХХ-ХХ" required="required">
+    </div>
+    <button class="main-btn callback__main-btn" type="button">Отправить</button>
+</form>
+
+    <section class="section blog">
+    <div class="container">
+        <h2 class="title blog__title">Блог</h2>
+        <ul class="blog__wrapper">
+            <li class="blog__item">
+                <article class="article">
+                    <a class="article__image" href="#">
+                        <img src="images/blog/white-shirt.jpg" width="445" height="240" alt="Мужчина умывается водой">
+                    </a>
+                    <h3 class="article__title">Как выбрать футболку?</h3>
+                    <time class="date-time date-time--blog" datetime="2022-12-10 12:32">12.10.22 12:32</time>
+                    <p class="article__text">
+                        Футболка — один из базовых элементов гардероба. Казалось бы, при ее выборе не должно возникать сложностей. Но если подойти к покупке со всей ответственностью, возникает множество нюансов...
+                    </p>
+                    <a class="link article__link" href="#">
+                        Читать далее
+                    </a>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="article">
+                    <a class="article__image" href="#">
+                        <img src="images/blog/man.jpg" width="445" height="240" alt="Мужчина умывается водой">
+                    </a>
+                    <h3 class="article__title">Как постирать футболку?</h3>
+                    <time class="date-time date-time--blog" datetime="2022-12-10 12:32">12.10.22 12:32</time>
+                    <p class="article__text">
+                        Рубашки – поло, шерстяные и трикотажные футболки, майки с элементами декора, контрастным принтом можно стирать только вручную при температуре около 30–40 градусов.
+                    </p>
+                    <a class="link article__link" href="#">
+                        Читать далее
+                    </a>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="article">
+                    <a class="article__image" href="#">
+                        <img src="images/blog/man.jpg" width="445" height="240" alt="Мужчина умывается водой">
+                    </a>
+                    <h3 class="article__title">Как постирать футболку?</h3>
+                    <time class="date-time date-time--blog" datetime="2022-12-10 12:32">12.10.22 12:32</time>
+                    <p class="article__text">
+                        Рубашки – поло, шерстяные и трикотажные футболки, майки с элементами декора, контрастным принтом можно стирать только вручную при температуре около 30–40 градусов.
+                    </p>
+                    <a class="link article__link" href="#">
+                        Читать далее
+                    </a>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="article">
+                    <a class="article__image" href="#">
+                        <img src="images/blog/green-shirt.jpg" width="445" height="240" alt="Зеленые футболки на плечиках">
+                    </a>
+                    <h3 class="article__title">Как выбрать футболку?</h3>
+                    <time class="date-time date-time--blog" datetime="2022-12-10 12:32">12.10.22 12:32</time>
+                    <p class="article__text">
+                        Футболка — один из базовых элементов гардероба. Казалось бы, при ее выборе не должно возникать сложностей. Но если подойти к покупке со всей ответственностью, возникает множество нюансов...
+                    </p>
+                    <a class="link article__link" href="#">
+                        Читать далее
+                    </a>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="article">
+                    <a class="article__image" href="#">
+                        <img src="images/blog/girl.jpg" width="445" height="240" alt="Девушка в прачечной">
+                    </a>
+                    <h3 class="article__title">Как постирать футболку?</h3>
+                    <time class="date-time date-time--blog" datetime="2022-12-10 12:32">12.10.22 12:32</time>
+                    <p class="article__text">
+                        Рубашки – поло, шерстяные и трикотажные футболки, майки с элементами декора, контрастным принтом можно стирать только вручную при температуре около 30–40 градусов.
+                    </p>
+                    <a class="link article__link" href="#">
+                        Читать далее
+                    </a>
+                </article>
+            </li>
+        </ul>
+
+        <div class="pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item">
+                    <span class="pagination__link pagination__link--prev pagination__link--disabled">
+                        <span class="sr-only">На предыдущую</span>
+                    </span>
+                </li>
+                <li class="pagination__item">
+                    <span class="pagination__link pagination__link--active">
+                        1
+                    </span>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">
+                        2
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">
+                        3
+                    </a>
+                </li>
+                <li class="pagination__item adaptive-hide">
+                    <a class="pagination__link" href="#">
+                        4
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link pagination__link--next" href="#">
+                        <span class="sr-only">На следующую</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer__inner">
+            <li class="footer__item">
+                <a class="logo footer__logo" href="#">
+                    <img src="images/logo.svg" width="122" height="75" alt="Логотип InColor">
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <h2 class="footer__title">Навигация</h2>
+
+                <ul class="menu menu--footer">
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Плиграфия
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Магазин
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer__item">
+                <h2 class="footer__title">Контакты</h2>
+
+                <ul class="contacts contacts--footer">
+                    <li class="contacts__item contacts__item--footer">
+                        <a class="white-link contacts__link contacts__link--social contacts__link--footer"
+                            href="tel:+380950173045">
+                            095 017 30 45
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--footer">
+                        <a class="white-link contacts__link" href="tel:+380688104688">
+                            068 810 46 88
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--footer">
+                        <a class="white-link contacts__link" href="mailto:incolor.ra@gmail.com">
+                            incolor.ra@gmail.com
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="callback-btn callback-btn--footer" type="button">Обратный звонок</button>
+            </li>
+
+            <li class="footer__item">
+                <h2 class="footer__title">Мы в соцсетях</h2>
+
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="#"
+                            style="background-image:url('images/sprite.svg#icon-facebook')"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#"
+                            style="background-image:url('images/sprite.svg#icon-instagram')"></a>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
