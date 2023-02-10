@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InColor | Главная страница</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header class="header header__main">
+    <div class="container header__container">
+        <div class="header__inner">
+            <ul class="contacts contacts--main">
+                <li class="contacts__item">
+                    <a class="white-link contacts__link contacts__link--social" href="tel:+380950173045">
+                        095 017 30 45
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="white-link contacts__link" href="tel:+380688104688">
+                        068 810 46 88
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="white-link contacts__link" href="mailto:incolor.ra@gmail.com">
+                        incolor.ra@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="header-menu">
+
+            <button class="burger-btn burger-btn--white burger-btn--open" type="button">
+                <span class="burger-btn__line burger-btn__line--white"></span>
+                <span class="sr-only">Открыть меню</span>
+            </button>
+
+            <a class="logo header__logo" href="#">
+                <img src="images/logo-sm.svg" width="122" height="57" alt="Логотип InColor">
+            </a>
+
+            <ul class="menu menu--main">
+                <li class="menu__item">
+                    <a class="white-link menu__link  @printActive" href="#">
+                        Печать
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="white-link menu__link @shopActive" href="#">
+                        Магазин
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="white-link menu__link @blogActive" href="#">
+                        Блог
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="white-link menu__link @infoActive" href="#">
+                        Контакты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="cart cart--on" href="#">
+                        <span class="cart__count">3</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <button class="callback-btn" type="button">Обратный звонок</button>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="overlay"></div>
+            <ul class="mobile-menu__inner">
+                <li class="mobile-menu__item">
+                    <button class="burger-btn burger-btn--close burger-btn--white" type="button">
+                        <span class="sr-only">Закрыть меню</span>
+                    </button>
+                    <a class="logo mobile-menu__logo" href="#">
+                        <img src="images/logo-sm.svg" width="122" height="57" alt="Логотип InColor">
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+
+                    <ul class="menu menu--mobile">
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @printActive" href="#">
+                                Печать
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @shopActive" href="#">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @blogActive" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @infoActive" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="white-link menu__link--mobile @basketActive" href="#">
+                                Корзина
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="mobile-menu__item">
+
+                    <ul class="contacts mobile-menu__contacts">
+                        <li class="contacts__item">
+                            <a class="white-link contacts__link contacts__link contacts__link--social" href="tel:+380950173045">
+                                095 017 30 45
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="white-link contacts__link contacts__link" href="tel:+380688104688">
+                                068 810 46 88
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="white-link contacts__link contacts__link" href="mailto:incolor.ra@gmail.com">
+                                incolor.ra@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="main main--main-bg">
+
+    <div class="callback-overlay"></div>
+<form class="callback" action="#" id="modal">
+    <button class="callback__close" type="button">
+        <span class="sr-only">Закрыть меню</span>
+    </button>
+    <h2 class="title callback__title">Обратный звонок</h2>
+    <div class="callback__item">
+        <label class="callback__label " for="name">
+            Ваше имя
+        </label>
+        <input class="callback__field" type="text" id="name" name="name" placeholder="Ваше имя"
+            required="required">
+    </div>
+    <div class="callback__item callback__item--phone">
+        <label class="callback__label" for="tel">
+            Телефон
+        </label>
+        <input class="callback__field callback__field" type="tel" id="tel" name="tel"
+            placeholder="+38(ХХХ) ХХХ-ХХ-ХХ" required="required">
+    </div>
+    <button class="main-btn callback__main-btn" type="button">Отправить</button>
+</form>
+
+    <section class="hero">
+    <div class="container hero__container">
+        <a class="logo hero__logo" href="#">
+            <img src="images/logo.svg" width="328" height="200" alt="Логотип InColor">
+        </a>
+
+        <h1 class="main-title">
+            <span class="main-title--bolder">InColor</span> — рекламно-производственная компания.
+        </h1>
+        <p class="hero__text">
+            Мы готовы предложить Вам широкий ассортимент полиграфических услуг, брендирование
+            одежды и сувенирной продукции. Производство рекламы от идеи до реализации, консультация
+            профессионалов.
+            Наши дизайнеры готовы разработать для Вас макет любой сложности. Мы готовы к сотрудничеству с
+            лояльной
+            ценовой политикой!
+        </p>
+        <ul class="icon-bar icon-bar--active">
+            <li class="icon-bar__item">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#t-shirt)" href="#">
+                    На футболках
+                </a>
+            </li>
+            <li class="icon-bar__item">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#polo)" href="#">
+                    На поло
+                </a>
+            </li>
+            <li class="icon-bar__item-open">
+                <button class="icon-bar__btn icon-bar__btn--open icon-bar__btn--active" type="button">Показать все</button>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#long-sleeve)" href="#">
+                    На лонгсливах
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#sweatshirt)" href="#">
+                    На толстовках
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#hoody)" href="#">
+                    На худи
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#cap)" href="#">
+                    На кепках
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#pazzle)" href="#">
+                    На пазлах
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#canvas)" href="#">
+                    На холсте
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#cup)" href="#">
+                    На чашках
+                </a>
+            </li>
+            <li class="icon-bar__item icon-bar__item--disabled">
+                <a class="icon-bar__link" style="background-image:url(images/sprite.svg#pillow)" href="#">
+                    На подушках
+                </a>
+            </li>
+            <li class="icon-bar__item-close icon-bar__item-close--disabled">
+                <button class="icon-bar__btn icon-bar__btn--close" type="button">Скрыть</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="portfolio">
+    <div class="container">
+        <h2 class="title portfolio__title">Наши работы</h2>
+
+        <ul class="portfolio__inner">
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/cups.jpg" alt="Принты на чашках">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/mouse.jpg" alt="Принты на коврике мыши">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/sert.jpg" alt="Печать сертификатов">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/t-shirt-blue.jpg" alt="Синяя футболка с принтом льва">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/caps.jpg" alt="Черные кепки с принтами">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/t-shirt-heart.jpg" alt="Принт сердца на белой футболке">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/t-shirt-black.jpg" alt="Черная футболка с принтом">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/star-wars.jpg" alt="Принт персонажа на футболке">
+                </a>
+            </li>
+            <li class="portfolio__item">
+                <a class="portfolio__link" href="#">
+                    <img src="images/portfolio/shirt-white.jpg" alt="Принт на белой майке">
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="features">
+    <div class="container">
+        <h2 class="title">
+            Почему мы
+        </h2>
+        <ul class="features__inner">
+            <li class="features__item features__item--supply">
+                <h3 class="features__caption">Собственное призводство и склад</h3>
+                <p class="features__text">
+                    прозволяют поставлять продукцию без дополнительных издержек
+                </p>
+            </li>
+            <li class="features__item features__item--loyalty">
+                <h3 class="features__caption">Система лояльности</h3>
+                <p class="features__text">
+                    для постоянных клиентов
+                </p>
+            </li>
+            <li class="features__item features__item--timing">
+                <h3 class="features__caption">Мы четко соблюдаем сроки поставки</h3>
+                <p class="features__text">
+                    так как для Вас это важно
+                </p>
+            </li>
+            <li class="features__item features__item--quality">
+                <h3 class="features__caption">Наш отдел качества</h3>
+                <p class="features__text">
+                    четко следит за соответствием товара заявленным параметрам
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="partners">
+    <div class="container">
+        <h2 class="title">
+            Нам доверяют
+        </h2>
+        <ul class="partners__inner">
+            <li class="partners__item partners__item--aster">
+                <img src="images/partners/aster.png" width="189" height="57" alt="Логотип Aster">
+            </li>
+            <li class="partners__item partners__item--magecom">
+                <img src="images/partners/magecom.png" width="165" height="28" alt="Логотип Magecom">
+            </li>
+            <li class="partners__item partners__item--baker">
+                <img src="images/partners/baker-street.png" width="65" height="84" alt="Логотип Baker Street">
+            </li>
+            <li class="partners__item partners__item--xmotors">
+                <img src="images/partners/xmotors.png" width="176" height="47" alt="Логотип X-motors">
+            </li>
+            <li class="partners__item partners__item--quantum">
+                <img src="images/partners/quantum.png" width="138" height="71" alt="Логотип Quantum">
+            </li>
+            <li class="partners__item partners__item--king">
+                <img src="images/partners/king.png" width="138" height="71" alt="Логотип King Fitness">
+            </li>
+        </ul>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer__inner">
+            <li class="footer__item">
+                <a class="logo footer__logo" href="#">
+                    <img src="images/logo.svg" width="122" height="75" alt="Логотип InColor">
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <h2 class="footer__title">Навигация</h2>
+
+                <ul class="menu menu--footer">
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Плиграфия
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Магазин
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--footer">
+                        <a class="white-link menu__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer__item">
+                <h2 class="footer__title">Контакты</h2>
+
+                <ul class="contacts contacts--footer">
+                    <li class="contacts__item contacts__item--footer">
+                        <a class="white-link contacts__link contacts__link--social contacts__link--footer"
+                            href="tel:+380950173045">
+                            095 017 30 45
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--footer">
+                        <a class="white-link contacts__link" href="tel:+380688104688">
+                            068 810 46 88
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item--footer">
+                        <a class="white-link contacts__link" href="mailto:incolor.ra@gmail.com">
+                            incolor.ra@gmail.com
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="callback-btn callback-btn--footer" type="button">Обратный звонок</button>
+            </li>
+
+            <li class="footer__item">
+                <h2 class="footer__title">Мы в соцсетях</h2>
+
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="#"
+                            style="background-image:url('images/sprite.svg#icon-facebook')"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#"
+                            style="background-image:url('images/sprite.svg#icon-instagram')"></a>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

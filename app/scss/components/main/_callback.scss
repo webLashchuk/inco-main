@@ -1,0 +1,96 @@
+.callback {
+    position: fixed;
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: -1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--active {
+        opacity: 1;
+        width: 600px;
+        height: 560px;
+        background-color: $white;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 5;
+
+    }
+
+    &__close {
+        position: relative;
+        align-self: flex-end;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $dark;
+        }
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+            top: 50%;
+        }
+
+        &::after {
+            top: calc(100% - 2px);
+            transform: rotate(-45deg);
+            top: 50%;
+        }
+    }
+
+    &__title {
+        font-size: 50px;
+        color: $primary;
+        margin: auto 0 50px;
+    }
+
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        margin-bottom: 25px;
+
+        &--phone {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__label {
+        display: block;
+        @extend %basket-font;
+        margin-bottom: 10px;
+    }
+
+    &__field {
+        @extend %input;
+    }
+
+    &__main-btn {
+        max-width: 360px;
+        width: 100%;
+        font-weight: 500;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+}
+
+.callback-overlay {
+    @extend %overlay;
+
+    &--active {
+        pointer-events: all;
+        opacity: 0.5;
+    }
+}
