@@ -145,29 +145,6 @@
 
 <main class="main main--secondary-bg">
 
-    <div class="callback-overlay"></div>
-<form class="callback" action="#" id="modal">
-    <button class="callback__close" type="button">
-        <span class="sr-only">Закрыть меню</span>
-    </button>
-    <h2 class="title callback__title">Обратный звонок</h2>
-    <div class="callback__item">
-        <label class="callback__label " for="name">
-            Ваше имя
-        </label>
-        <input class="callback__field" type="text" id="name" name="name" placeholder="Ваше имя"
-            required="required">
-    </div>
-    <div class="callback__item callback__item--phone">
-        <label class="callback__label" for="tel">
-            Телефон
-        </label>
-        <input class="callback__field callback__field" type="tel" id="tel" name="tel"
-            placeholder="+38(ХХХ) ХХХ-ХХ-ХХ" required="required">
-    </div>
-    <button class="main-btn callback__main-btn" type="button">Отправить</button>
-</form>
-
     <section class="section product">
     <div class="container product__container">
         <a class="link breadcrumbs" href="#">Вернуться в каталог</a>
@@ -176,14 +153,14 @@
                 <img src="images/product/t-shirt.jpg" width="460" height="460" alt="Футболка «Хорош, но не лучший»">
             </div>
             <div class="product__inner">
-                <h2 class="article-title product__article-title">Футболка «Хорош, но не лучший»</h2>
+                <h1 class="article-title product__article-title">Футболка «Хорош, но не лучший»</h1>
                 <p class="product__text">
                     Футбо́лка — предмет нательной одежды для обоих полов, обычно не имеющий пуговиц, воротника и
                     карманов, с короткими либо длинными рукавами, закрывающий туловище, часть рук и верх бёдер,
                     надевается через голову.
                 </p>
                 <form class="product-filter" action="#">
-                    <h3 class="product-filter__caption">Размер футболки</h3>
+                    <h2 class="product-filter__caption">Размер футболки</h2>
                     <ul class="product-filter__list">
                         <li class="product-filter__item">
                             <input class="product-filter__size-checkbox" type="radio" id="size-s" name="size"
@@ -206,7 +183,7 @@
                             <label class="product-filter__size-label" for="size-xl">XL</label>
                         </li>
                     </ul>
-                    <h3 class="product-filter__caption">Цвет</h3>
+                    <h2 class="product-filter__caption">Цвет</h2>
                     <ul class="product-filter__list">
                         <li class="product-filter__item">
                             <input class="product-filter__color-checkbox" type="radio" id="purple" name="color"
@@ -237,7 +214,30 @@
         </div>
     </div>
 </section>
-
+    
+    <div class="callback-overlay"></div>
+<form class="callback" action="#" id="modal">
+    <button class="callback__close" type="button">
+        <span class="sr-only">Закрыть меню</span>
+    </button>
+    <h2 class="title callback__title">Обратный звонок</h2>
+    <div class="callback__item">
+        <label class="callback__label " for="name">
+            Ваше имя
+        </label>
+        <input class="callback__field" type="text" id="name" name="name" placeholder="Ваше имя"
+            required="required">
+    </div>
+    <div class="callback__item callback__item--phone">
+        <label class="callback__label" for="tel">
+            Телефон
+        </label>
+        <input class="callback__field callback__field" type="tel" id="tel" name="tel"
+            placeholder="+38(ХХХ) ХХХ-ХХ-ХХ" required="required">
+    </div>
+    <button class="main-btn callback__main-btn" type="button">Отправить</button>
+</form>
+    
 </main>
 
 <footer class="footer">
