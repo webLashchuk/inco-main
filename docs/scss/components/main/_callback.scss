@@ -7,9 +7,13 @@
     flex-direction: column;
     align-items: center;
     padding: 25px;
-    
+
     @include mq('phone') {
         padding: 15px;
+    }
+
+    @include r(420) {
+        padding: 10px;
     }
 
     &--active {
@@ -31,7 +35,7 @@
             max-width: 360px;
             height: 400px;
         }
-        
+
         @include mq('phone') {
             max-width: 320px;
             height: 380px;
@@ -39,6 +43,11 @@
 
         @include mq('phone-2') {
             max-width: 300px;
+        }
+
+        @include r(420) {
+            max-width: 320px;
+            height: 320px;
         }
     }
 
@@ -48,6 +57,11 @@
         width: 25px;
         height: 20px;
         cursor: pointer;
+
+        @include r(420) {
+            width: 20px;
+            height: 20px;
+        }
 
         &::before,
         &::after {
@@ -90,17 +104,26 @@
             font-size: 28px;
             margin: auto 0 30px;
         }
+
+        @include r(420) {
+            font-size: 28px;
+            margin: auto 0 20px;
+        }
     }
 
     &__item {
         max-width: 360px;
         width: 100%;
         margin-bottom: 25px;
-        
+
         @include mq('tablet') {
             margin-bottom: 15px;
         }
-        
+
+        @include r(420) {
+            margin-bottom: 15px;
+        }
+
         @include mq('phone') {
             max-width: 280px;
         }
@@ -111,6 +134,10 @@
             @include mq('tablet') {
                 margin-bottom: 30px;
             }
+
+            @include r(420) {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -119,7 +146,12 @@
         @extend %basket-font;
         margin-bottom: 10px;
 
+
         @include mq('phone') {
+            font-size: 18px
+        }
+
+        @include r(420) {
             font-size: 18px
         }
     }
