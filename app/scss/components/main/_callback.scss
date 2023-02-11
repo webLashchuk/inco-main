@@ -3,10 +3,14 @@
     opacity: 0;
     transition: opacity .5s;
     z-index: -1;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 25px;
+    
+    @include mq('phone') {
+        padding: 15px;
+    }
 
     &--active {
         opacity: 1;
@@ -18,6 +22,24 @@
         transform: translateY(-50%) translateX(-50%);
         z-index: 5;
 
+        @include mq('tablet-2') {
+            max-width: 500px;
+            height: 500px;
+        }
+
+        @include mq('tablet') {
+            max-width: 360px;
+            height: 400px;
+        }
+        
+        @include mq('phone') {
+            max-width: 320px;
+            height: 380px;
+        }
+
+        @include mq('phone-2') {
+            max-width: 300px;
+        }
     }
 
     &__close {
@@ -54,15 +76,41 @@
         font-size: 50px;
         color: $primary;
         margin: auto 0 50px;
+
+        @include mq('tablet-2') {
+            font-size: 40px;
+        }
+
+        @include mq('tablet') {
+            font-size: 30px;
+            margin: auto 0 30px;
+        }
+
+        @include mq('phone') {
+            font-size: 28px;
+            margin: auto 0 30px;
+        }
     }
 
     &__item {
         max-width: 360px;
         width: 100%;
         margin-bottom: 25px;
+        
+        @include mq('tablet') {
+            margin-bottom: 15px;
+        }
+        
+        @include mq('phone') {
+            max-width: 280px;
+        }
 
         &--phone {
             margin-bottom: 50px;
+
+            @include mq('tablet') {
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -70,6 +118,10 @@
         display: block;
         @extend %basket-font;
         margin-bottom: 10px;
+
+        @include mq('phone') {
+            font-size: 18px
+        }
     }
 
     &__field {
@@ -83,6 +135,14 @@
         border-radius: 4px;
         padding: 10px;
         margin-bottom: 80px;
+
+        @include mq('tablet-2') {
+            margin-bottom: auto;
+        }
+
+        @include mq('phone') {
+            max-width: 280px;
+        }
     }
 }
 

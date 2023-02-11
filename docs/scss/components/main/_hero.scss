@@ -110,6 +110,9 @@
         width: 100%;
 
         @include mq('phone') {
+            text-align: left;
+            padding: 0 40px;
+            max-width: 400px;
             &--background {
                 background-color: $mobileBg;
             }

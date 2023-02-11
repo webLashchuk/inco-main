@@ -44,18 +44,17 @@ $(function () {
         })
     });
 
-     //icon-bar menu
-     $(".icon-bar__item-open").on('click', function () {
+    //icon-bar menu
+    $(".icon-bar__item-open").on('click', function () {
         $(this).nextAll('.icon-bar__item, .icon-bar__item-close').slideDown(600);
         $('.icon-bar').addClass('icon-bar--active');
-        $('.icon-bar__item').removeClass('icon-bar__item--disabled');
         $('.icon-bar__item-close').removeClass('icon-bar__item-close--disabled');
         $('.icon-bar__item-open').addClass('icon-bar__item-open--active');
         $('.icon-bar__item-close').removeClass('icon-bar__item-close--active');
     });
 
-    $(".icon-bar__item-close").on('click', function () {
-        $(this).prevUntil(".icon-bar__item-open").slideUp(600);
+    $('.icon-bar__item-close').on('click', function () {
+        $(this).prevUntil('.icon-bar__item-open').slideUp(600);
         $('.icon-bar__item-close').addClass('icon-bar__item-close--disabled');
         $('.icon-bar').removeClass('icon-bar--active');
         $('.icon-bar__item-open').removeClass('icon-bar__item-open--active');
@@ -65,14 +64,16 @@ $(function () {
         if ($(window).width() > 560) {
             $('.sidebar__item').css('display', 'block');
             $('.sidebar__item--open').css('margin-bottom', '0');
-            $('.icon-bar__item').removeClass('icon-bar__item--disabled');
             $('.icon-bar__item').css('display', 'block');
         }
-        else
+        else if ($(window).width() < 560) {
             $('.sidebar__item').css('display', 'none');
-        $('.sidebar__item--open').css('display', 'block');
-        $('.sidebar__btn--close').addClass('sidebar__btn--disabled');
-        $('.icon-bar__item--disabled').css('display', 'none');
+            $('.sidebar__item--open').css('display', 'block');
+            $('.sidebar__btn--close').addClass('sidebar__btn--disabled');
+            $('.icon-bar__item--disabled').css('display', 'none');
+            $('.icon-bar__item-close').addClass('icon-bar__item-close--disabled');
+            $('.icon-bar__item-open').removeClass('icon-bar__item-open--active');
+        }
     };
 
     $(window).on('resize', displayBlock);
